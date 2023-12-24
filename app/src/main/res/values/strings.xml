@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Spisok</string>
+    <string-array name="categories">
+        <item>Фрукты</item>
+        <item>Овощи</item>
+        <item>Молочные продукты</item>
+    </string-array>
+</resources>

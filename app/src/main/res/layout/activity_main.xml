@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/productNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название продукта"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productNameEditText"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена"
+        android:layout_below="@id/categorySpinner"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/addProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="addProduct"
+        android:text="Добавить продукт" />
+
+    <Button
+        android:id="@+id/saveToFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addProductButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="saveToFile"
+        android:text="Сохранить в файл" />
+
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveToFileButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="16dp"
+        android:choiceMode="singleChoice"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>
